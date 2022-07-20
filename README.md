@@ -1,1 +1,1 @@
-# boxkit
+#pnpm vite monorepo demo
