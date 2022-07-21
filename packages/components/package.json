@@ -4,6 +4,7 @@
   "description": "",
   "main": "./lib/bk-components.umd.js",
   "module": "./lib/bk-components.es.js",
+  "style": "./lib/style.css",
   "types": "./lib/index.d.ts",
   "scripts": {
     "build": "vue-tsc --emitDeclarationOnly && vite build --config vite.build.ts",

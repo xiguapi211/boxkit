@@ -16,7 +16,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "@boxkit/components": "workspace:^1.0.0",
+    "@boxkit/components": "workspace:^0.0.1",
     "vue": "^3.2.37"
   },
   "devDependencies": {
