@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@src/*": ["./src/*"]
+        },
+        "outDir": "lib",
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "strict": true,
+        "lib": ["ESNext", "DOM"],
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "declaration": true
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.vue"
+    ]
+}

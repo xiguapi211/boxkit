@@ -1,27 +1,19 @@
 <template>
     <div>
-        <a
-            href="https://vitejs.dev"
-            target="_blank"
-        >
-            <img
-                src="/vite.svg"
-                class="logo"
-                alt="Vite logo"
-            >
-        </a>
-        <case></case>
+        <div>测试按钮</div>
+        <bk-button
+            text="Hello Button"
+        />
     </div>
 </template>
-
 <script lang="ts">
 import { defineComponent, reactive, toRefs } from 'vue';
-import Case  from './components/case.vue';
+import { BKButton } from '@boxkit/components';
 
 export default defineComponent({
-    name: 'App',
+    name: 'Case',
     components: {
-        Case
+        'bk-button': BKButton,
     },
     setup() {
         const state = reactive({});

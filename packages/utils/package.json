@@ -1,10 +1,17 @@
 {
   "name": "@boxkit/utils",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "type": "module",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+      "lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "build": "tsc -b tsconfig.build.json",
+      "clean": "rimraf lib"
   },
   "keywords": [],
   "author": "",

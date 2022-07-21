@@ -6,15 +6,28 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "vite",
-    "build": "pnpm --filter=@boxkit/* run build",
-    "preview": "vite preview"
+    "build:ui": "pnpm --filter=@boxkit/components run build",
+    "build:utils": "pnpm --filter=@boxkit/utils run build",
+    "build": "pnpm build",
+    "clean": "pnpm --parallel --stream clean",
+    "lint": "eslint --ext .ts,vue --ignore-path .gitignore ."
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
+    "@boxkit/components": "workspace:^1.0.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
     "@vitejs/plugin-vue": "^3.0.0",
-    "typescript": "^4.6.4",
+    "eslint": "^8.20.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "less": "^4.1.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4",
     "vite": "^3.0.0",
     "vue-tsc": "^0.38.4"
   }
