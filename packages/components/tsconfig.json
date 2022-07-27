@@ -1,19 +1,29 @@
 {
     "compilerOptions": {
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        // 生成的是哪个模块体系代码
+        "module": "ESNext",
+        // 如何处理模块
+        "moduleResolution": "node",
         "baseUrl": "./",
         "paths": {
             "@src/*": ["./src/*"]
         },
         "outDir": "lib",
-        "target": "ESNext",
-        "module": "ESNext",
-        "moduleResolution": "node",
+        // 严格类型检查
         "strict": true,
         "lib": ["ESNext", "DOM"],
-        "sourceMap": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "declaration": true
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "declarationDir": "./lib/types",
+        "isolatedModules": true,
+        "skipLibCheck": true,
+        "types": [
+            "vite/client"
+        ]
     },
     "include": [
         "./src/**/*.ts",

@@ -1,13 +1,12 @@
 {
   "name": "@boxkit/components",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "./lib/bk-components.umd.js",
-  "module": "./lib/bk-components.es.js",
+  "main": "./lib/bk-components.es.js",
   "style": "./lib/style.css",
-  "types": "./lib/index.d.ts",
+  "types": "./lib/types/index.d.ts",
   "scripts": {
-    "build": "vue-tsc --emitDeclarationOnly && vite build --config vite.build.ts",
+    "build": "vite build --config vite.build.ts && vue-tsc",
     "clean": "rimraf lib"
   },
   "keywords": [],
@@ -17,8 +16,7 @@
   ],
   "exports": {
     ".": {
-      "import": "./lib/bk-components.es.js",
-      "require": "./lib/bk-components.umd.js"
+      "import": "./lib/bk-components.es.js"
     }
   },
   "license": "ISC",
