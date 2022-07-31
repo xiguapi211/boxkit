@@ -8,8 +8,10 @@
     "dev": "vite",
     "build:ui": "pnpm --filter=@boxkit/components run build",
     "build:utils": "pnpm --filter=@boxkit/utils run build",
-    "build": "pnpm build",
+    "build": "pnpm --filter=@boxkit/* run build",
     "clean": "pnpm --parallel --stream clean",
+    "release": "pnpm build && pnpm publish",
+    "publish": "changeset publish --registry=https://registry.npmjs.com/",
     "lint": "eslint --ext .ts,vue --ignore-path .gitignore ."
   },
   "workspaces": [

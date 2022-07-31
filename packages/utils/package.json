@@ -1,19 +1,19 @@
 {
-  "name": "@boxkit/utils",
-  "version": "0.0.1",
-  "type": "module",
-  "description": "",
-  "main": "lib/index.js",
-  "module": "./lib/index.js",
-  "types": "./lib/index.d.ts",
-  "files": [
-      "lib"
-  ],
-  "scripts": {
-      "build": "tsc -b tsconfig.build.json",
-      "clean": "rimraf lib"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "@boxkit/utils",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "",
+    "main": "lib/index.js",
+    "module": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "build": "tsc -b tsconfig.build.json",
+        "clean": "rimraf lib"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }

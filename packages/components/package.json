@@ -1,6 +1,6 @@
 {
   "name": "@boxkit/components",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "./lib/bk-components.es.js",
   "style": "./lib/style.css",
@@ -23,6 +23,5 @@
   "dependencies": {
     "vite": "^3.0.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
