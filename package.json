@@ -1,8 +1,7 @@
 {
-  "name": "boxkit",
+  "name": "boxkit-demo",
   "private": true,
-  "version": "0.0.1",
-  "type": "module",
+  "packageManager": "pnpm@7.5.2",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "vite",
@@ -10,7 +9,7 @@
     "build:utils": "pnpm --filter=@boxkit/utils run build",
     "build": "pnpm --filter=@boxkit/* run build",
     "clean": "pnpm --parallel --stream clean",
-    "release": "pnpm build && pnpm publish",
+    "release": "pnpm build && pnpm publish --access public",
     "publish": "changeset publish --registry=https://registry.npmjs.com/",
     "lint": "eslint --ext .ts,vue --ignore-path .gitignore ."
   },

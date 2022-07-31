@@ -9,6 +9,10 @@
     "files": [
         "lib"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xiguapi211/boxkit"
+    },
     "scripts": {
         "build": "tsc -b tsconfig.build.json",
         "clean": "rimraf lib"

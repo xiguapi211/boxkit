@@ -5,9 +5,13 @@
   "main": "./lib/bk-components.es.js",
   "style": "./lib/style.css",
   "types": "./lib/types/index.d.ts",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/xiguapi211/boxkit"
+  },
   "scripts": {
-    "build": "vite build --config vite.build.ts && vue-tsc",
-    "clean": "rimraf lib"
+      "build": "vite build --config vite.build.ts && vue-tsc",
+      "clean": "rimraf lib"
   },
   "keywords": [],
   "author": "",
