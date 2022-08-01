@@ -1,0 +1,11 @@
+{
+  "mode": "pre",
+  "tag": "beta",
+  "initialVersions": {
+    "@boxkit/components": "1.0.0",
+    "@boxkit/utils": "1.0.0"
+  },
+  "changesets": [
+    "tender-apricots-perform"
+  ]
+}

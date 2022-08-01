@@ -17,7 +17,6 @@
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "declaration": true,
-        "emitDeclarationOnly": true,
         "declarationDir": "./lib/types",
         "isolatedModules": true,
         "skipLibCheck": true,
