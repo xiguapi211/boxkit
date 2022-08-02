@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@boxkit/components': workspace:^0.0.1
+      '@boxkit/components': workspace:2.0.0-beta.0
       '@changesets/cli': ^2.24.1
       '@typescript-eslint/eslint-plugin': ^5.30.7
       '@typescript-eslint/parser': ^5.30.7
@@ -35,8 +35,10 @@ importers:
 
   packages/components:
     specifiers:
+      '@boxkit/utils': workspace:2.0.0-beta.0
       vite: ^3.0.0
     dependencies:
+      '@boxkit/utils': link:../utils
       vite: 3.0.2
 
   packages/utils:
